@@ -18,7 +18,7 @@ function FilterableList() {
             </div>
             <div className="col border-end">
             <span className='text-red-900 '>Price</span><br />
-            <select className='border-0 border-bottom p-2' name="" id="" onChange={a.handleChangePrice}>
+            <select className='border-0 border-bottom p-2' value={a.priceuser} name="" id="" onChange={a.handleChangePrice}>
                 <option value="">All prices</option>
                 <option value="500-2500">$500-$2500</option>
                 <option value="2500-4500">$2500-$4500</option>

@@ -35,6 +35,7 @@ const State = (props) =>{
     const [location, setLocation]= useState()
     const [date, setDate]= useState()
     const [price, setPrice]= useState({ min: 0, max: Infinity })
+    const [priceuser, setPriceUser] = useState()
     const [property, setProperty]= useState()
 
     const handleChangeLocation = (event) =>{
@@ -49,7 +50,7 @@ const State = (props) =>{
         const min = Number(event.target.value.split('-')[0]);
         const max = Number(event.target.value.split('-')[1]);
         setPrice({ min, max });
-        setPrice(event.target.value);
+        setPriceUser(event.target.value);
     }
     const handleChangeProperty = (event) =>{
         setProperty(event.target.value)

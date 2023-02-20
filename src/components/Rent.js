@@ -18,7 +18,7 @@ function Rent() {
           ()=> !a.price || product.price,
           () => !a.price ||
           (product.price >= a.price.min && product.price <= a.price.max),
-          () => !a.type || product.type === a.type,
+          () => !a.property || product.type === a.property,
         ];
 
         return filters.every((filter)=> filter())
