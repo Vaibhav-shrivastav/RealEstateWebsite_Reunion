@@ -32,21 +32,24 @@ const State = (props) =>{
         setModal(false)
     }
     //FILTERABLE LIST
-    const [location, setLocation]= useState('New York, USA')
+    const [location, setLocation]= useState()
     const [date, setDate]= useState()
-    const [price, setPrice]= useState('All prices')
-    const [property, setProperty]= useState('Any')
+    const [price, setPrice]= useState({ min: 0, max: Infinity })
+    const [property, setProperty]= useState()
 
     const handleChangeLocation = (event) =>{
-        setLocation(event.target.value)
+        const str = event.target.value 
+        const str2 = str.charAt(0).toUpperCase() + str.slice(1)
+        setLocation(str2)
     }
     const handleChangeDate = (event) =>{
         setDate(event.target.value);
-        console.log(date);
     }
     const handleChangePrice = (event) =>{
+        const min = Number(event.target.value.split('-')[0]);
+        const max = Number(event.target.value.split('-')[1]);
+        setPrice({ min, max });
         setPrice(event.target.value);
-        console.log(price);
     }
     const handleChangeProperty = (event) =>{
         setProperty(event.target.value)

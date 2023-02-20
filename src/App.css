@@ -130,3 +130,6 @@ body{
   color:black;
   background-color: #e5c7fa;
 }
+#notFound{
+  font-size: 40px;
+}
