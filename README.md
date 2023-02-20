@@ -12,4 +12,4 @@ for fonts, pexels for images, `react-router-dom` for Routing and links and `reac
 
 ## Snapshots:- 
 
-<img src = 'src/images/HomePage.png'>
+<img src = 'src/images/HomePage1.png'>
