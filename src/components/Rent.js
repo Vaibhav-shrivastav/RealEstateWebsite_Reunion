@@ -25,7 +25,7 @@ function Rent() {
     });
   return (
     <div className="container text-center ">
-        <div className="row text-center">
+        <div className="row text-center d-flex justify-content-center">
         {filteredProperties.length !== 0 ?
         filteredProperties.slice(0,10).map((item)=>(
             <div className="col-3 shadow-sm pb-3 mb-5 mx-3 bg-white rounded">
