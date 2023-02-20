@@ -25,8 +25,9 @@ function Navbar() {
               <option value="Property">Resources</option>
             </select>
             </span>
-            <span id='login'><button className="LoginButton btn shadow-sm bg-white rounded">Login</button></span> &nbsp;&nbsp;&nbsp;
-            <span id='login'><button className="LoginButton btn shadow-sm bg-white rounded">Sign up</button></span> 
+            <span id='login'><button className="LoginButton btn shadow-sm signup rounded mx-3">Sign up</button></span>
+            <span id='login'><button className="LoginButton btn shadow-sm bg-white rounded">Login</button></span> 
+             
             
           
           </div>

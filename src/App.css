@@ -86,6 +86,9 @@ body{
 #img{
   object-fit: contain;
 }
+#login{
+  float: right;
+}
 #price{
   color: #A533FF ;
   font-weight: 600;
@@ -121,6 +124,10 @@ body{
 }
 .logodet{
   color:#A533FF ;
+}
+.signup{
+  background-color: #A533FF;
+  color: white;
 }
 .native{
   background-color: #A533FF ;
