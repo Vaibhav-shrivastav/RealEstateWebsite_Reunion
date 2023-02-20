@@ -1,38 +1,132 @@
-.App {
+#navtitle{
+  font-family: 'Quicksand', Courier, monospace;
+  font-weight: 800;
+  font-size: 20px;
+}
+#nav{
+  background-color: #F8EEFF;
+}
+#navlinks{
+  word-spacing: 50px;
+  
+}
+#label{
+  height: 50px;
+  float: left;
+  margin: 0;
+}
+.navlink{
+  text-decoration: none;
+  font-family: 'Quicksand', Courier, monospace;
+  font-weight: 800;
+  font-size: 17px;
+  color: black;
+  transition: background-color 0.4s ;
+
+}
+.navlinkdrop{
+  text-decoration: none;
+  font-family: 'Quicksand', Courier, monospace;
+  font-weight: 800;
+  font-size: 17px;
+  color: black;
+  transition: background-color 0.4s ;
+  border: none;
+  
+}
+.navlinkActive{
+  text-decoration: none;
+  font-family: 'Quicksand', Courier, monospace;
+  font-weight: 800;
+  font-size: 17px;
+  color: black;
+  background-color: #F8EEFF;
+  padding: 10px;
+  border-radius: 5px;
+  color: #A533FF;
+  transition: background-color 0.4s ;
+}
+.navlink:hover{
+  color: #A533FF;
+}
+.navlinkActive:hover{
+  color: #A533FF;
+}
+.navlinkLoginButton{
+
+  border-radius: 5px;
+}
+.LoginButton{
+  background-color: white;
+  color:#A533FF ;
+  font-family: 'Quicksand', Courier, monospace;
+  font-weight: 500;
+}
+body{
+  background-color: #FAF5FE ;
+}
+#SearchLine{
+  font-family: 'Quicksand', Courier, monospace;
+  font-weight: 600;
+  font-size: 30px;
+}
+#search{
+  padding: 5px;
+  border-radius: 5px;
+  float: right;
+  font-family: 'Quicksand', Courier, monospace;
+}
+.text{
+  color: black;
+  font-family: 'Quicksand', Courier, monospace;
+}
+.text-red-900{
+  color: #dc3545;
+}
+#img{
+  object-fit: contain;
+}
+#price{
+  color: #A533FF ;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Quicksand', Courier, monospace;
+  float: left;
+}
+#priceLabel{
+  color:darkgrey;
+  font-size: 15px;
+}
+.like{
+  color:red;
+  font-size: 20px;
+  float: right;
+  font-size: 20px;
+}
+.notliked{
+  color: black;
+  float: right;
+  font-size: 20px;
+}
+#modal{
+  position: fixed;
   text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.details{
+  font-family: 'Quicksand', Courier, monospace;
+  float: left;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logodet{
+  color:#A533FF ;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.native{
+  background-color: #A533FF ;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.native:hover{
+  color:black;
+  background-color: #e5c7fa;
 }

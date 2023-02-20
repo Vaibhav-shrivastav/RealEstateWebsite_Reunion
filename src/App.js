@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar.js'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Rent from './components/Rent';
+import Buy from './components/Buy';
+import Sell from './components/Sell';
+import SearchBar from './components/SearchBar';
+import FilterableList from './components/FilterableList';
+import State from './context/State';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <State>
+    <BrowserRouter>
+      <Navbar/> <br />
+      <SearchBar/><br />
+      <FilterableList/>
+      <Routes>
+        <Route path = '/' element = {<Rent/>}></Route>
+        <Route path = '/buy' element = {<Buy/>}></Route>
+        <Route path = '/sell' element = {<Sell/>}></Route>
+      </Routes>
+    </BrowserRouter>
+    </State>
+    </>
   );
 }
 
