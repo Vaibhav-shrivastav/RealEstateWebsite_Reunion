@@ -1,6 +1,6 @@
 # Real Estate Property Filtering website
 
-This website was made using react. It is an single page web application displaying properties
+This website was made using react. It is a single page web application displaying properties
 to buy, sell and rent. External packages or libraries include, Bootstrap as CSS framework, Google Fonts 
 for fonts, pexels for images, `react-router-dom` for Routing and links and `react-icons` for some icons.
 
